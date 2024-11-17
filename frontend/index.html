@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Clientes</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Agregar Cliente y Ubicación</h1>
+    <form id="cliente-form">
+        <input type="text" name="cedula" placeholder="Cédula" required>
+        <input type="text" name="nombres" placeholder="Nombres" required>
+        <input type="text" name="apellidos" placeholder="Apellidos" required>
+        <input type="text" id="direccion" name="direccion" placeholder="Dirección" required>
+        <input type="text" id="latitud" name="latitud" placeholder="Latitud" readonly>
+        <input type="text" id="longitud" name="longitud" placeholder="Longitud" readonly>
+        <button type="submit">Guardar Cliente</button>
+    </form>
+
+    <h2>Selecciona una ubicación en el mapa:</h2>
+    <div id="map" style="height: 400px;"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
